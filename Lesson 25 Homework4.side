@@ -1,0 +1,508 @@
+{
+  "id": "c0685900-0b48-4572-957c-b65a9ed624ff",
+  "version": "2.0",
+  "name": "Lesson 25 Homework",
+  "url": "https://book-ye.com.ua/",
+  "tests": [{
+    "id": "ffb78389-728f-46c9-b0ff-1e1f72cf7e72",
+    "name": "\"SearchBookByTitleTest\"",
+    "commands": [{
+      "id": "43a92d08-758e-487b-8321-326ab7b00a2d",
+      "comment": "",
+      "command": "open",
+      "target": "https://book-ye.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd874689-fb36-4422-b844-379f296bc74d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/footer/div/div[1]/div[1]/ul/li[2]/a",
+      "targets": [],
+      "value": "Книгарні"
+    }, {
+      "id": "c71595f0-e27e-4e22-a30b-83fe37a9db3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__logo-img",
+      "targets": [
+        ["css=.header__logo-img", "css:finder"],
+        ["xpath=//img[@alt='Логотип']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bd74536-cabc-4718-8637-7ad39707c054",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=body > main > footer > div > div.row > div.col-md-9 > ul > li:nth-child(4) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38402f16-ff4c-4551-b687-e4f570d47632",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "696x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "190d9d11-f0fc-4c06-8da2-43c43ce0c885",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon:nth-child(1)",
+      "targets": [
+        ["css=.icon:nth-child(1)", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fca922e6-1537-4df1-99d3-7c0242feb662",
+      "comment": "",
+      "command": "store",
+      "target": "${MyVariable}",
+      "targets": [],
+      "value": "Harry Potter and the goblet of fire"
+    }, {
+      "id": "1ae977c7-7f4c-4f7b-9abc-d0d4bd36e4a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#q",
+      "targets": [
+        ["id=q", "id"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='multi-form']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f833ad76-a100-461b-b7e6-322f45e7dc58",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.icon:nth-child(1)",
+      "targets": [
+        ["css=.icon:nth-child(1)", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c36a9cf9-db15-4f26-a2e0-bf51bbd7c481",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.multi-lastQueries",
+      "targets": [
+        ["css=.multi-lastQueries", "css:finder"],
+        ["xpath=//div[7]/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e137c913-79de-4c22-a76a-cb1e6a02d600",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9de419a-0703-4572-8e2a-a39c0cc3a12a",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .multi-lastQuery",
+      "targets": [
+        ["css=div:nth-child(2) > .multi-lastQuery", "css:finder"],
+        ["xpath=//div[7]/div/div/div/div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "${MyVariable}"
+    }, {
+      "id": "c0fb0531-4c02-4879-8f1f-eb70bad2311d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Harry Potter and the Goblet of Fire')]",
+      "targets": [
+        ["css=.multi-cell:nth-child(1) > .multi-item:nth-child(2) a > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Harry Potter and the Goblet of Fire')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96173944-25ed-460b-958d-82631e37cfe8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2dbec7ae-dfd9-4036-9f2a-201a297c990a",
+    "name": "SelectBookFromTopTest",
+    "commands": [{
+      "id": "09f99254-1e63-4385-92c8-da0bbe43fe38",
+      "comment": "",
+      "command": "open",
+      "target": "https://book-ye.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe9a2a34-fbf9-4766-99b3-e0860885fd3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "696x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06c188b2-c457-4c98-8312-f0974cbd2c45",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/header/div[1]/div[1]/div/div/a[4]",
+      "targets": [],
+      "value": "ТОП книг"
+    }, {
+      "id": "5e9043b1-156d-4856-b338-81af0cfc70bf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/header/div[1]/div[1]/div/div/a[4]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a76600d5-d8ec-4e8c-ae3f-a0378435e4bf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ТОП книг",
+      "targets": [
+        ["linkText=ТОП книг", "linkText"],
+        ["css=.header__top-nav-link:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'ТОП книг')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/catalog/vydavnytstva/filter/top-is-true/')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'ТОП книг')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fe22e8d-6a62-4612-b51f-aea37da130f7",
+      "comment": "",
+      "command": "store",
+      "target": "${BookType}",
+      "targets": [],
+      "value": "Сім чоловіків Евелін Г'юґо"
+    }, {
+      "id": "e5d10ce7-7099-4cd9-b5d9-cb39ce03085f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bx_3966226736_551826 .product__media",
+      "targets": [
+        ["css=#bx_3966226736_551826 .product__media", "css:finder"],
+        ["xpath=//img[@alt=\"Сім чоловіків Евелін Г'юґо\"]", "xpath:img"],
+        ["xpath=//div[@id='bx_3966226736_551826']/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": "${BookType}"
+    }, {
+      "id": "36293e23-b924-4f2c-8dcd-c9c9c131fa34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--width",
+      "targets": [
+        ["css=.button--width", "css:finder"],
+        ["xpath=//a[contains(text(),'Купити')]", "xpath:link"],
+        ["xpath=//section[@id='bx_117848907_551826']/div/div/div/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:add2basket(551826)')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[2]", "xpath:position"]
+      ],
+      "value": "${BookType}"
+    }, {
+      "id": "c991c687-4806-449d-9a6b-616afe5b09dc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.button--width",
+      "targets": [
+        ["css=.button--width", "css:finder"],
+        ["xpath=//a[contains(text(),'Купити')]", "xpath:link"],
+        ["xpath=//section[@id='bx_117848907_551826']/div/div/div/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:add2basket(551826)')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a0b4d0e-fabf-4b9a-ab8d-189d0707c93c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.button--width",
+      "targets": [
+        ["css=.button--width", "css:finder"],
+        ["xpath=//a[contains(text(),'Купити')]", "xpath:link"],
+        ["xpath=//section[@id='bx_117848907_551826']/div/div/div/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:add2basket(551826)')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c277f4-2470-4978-8aba-0cfd5debf7db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-content__close",
+      "targets": [
+        ["css=.modal-content__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='product-modal']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78e5d10b-ace4-4eb8-9045-e32a5bb95af0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header-bottom__favorites-icon",
+      "targets": [
+        ["css=.header-bottom__favorites-icon", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db105d20-e2d8-4b20-a515-229aa71d6ad9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header-bottom__favorites-icon",
+      "targets": [
+        ["css=.header-bottom__favorites-icon", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acbd0f0d-a2ff-4873-9383-f6c3a294c312",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "793ce891-272e-4fc8-be6d-8954ba367ee9",
+    "name": "CheckAuthorOnBookPageTest",
+    "commands": [{
+      "id": "89546c55-79d7-4834-969a-eaee21bdcb36",
+      "comment": "",
+      "command": "open",
+      "target": "https://book-ye.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63801bae-56f6-4ea1-b15d-ed9ea50b4c8c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "696x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "248156a4-5b22-434e-b7b3-14c93779fe1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-slider .owl-pagination",
+      "targets": [
+        ["css=.main-slider .owl-pagination", "css:finder"],
+        ["xpath=//main/div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b168f7b-5fa4-4904-b6de-201913a558dd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,363.6363525390625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a41c4c4-0f87-431b-a250-8b8a104dd495",
+      "comment": "",
+      "command": "store",
+      "target": "${Author}",
+      "targets": [],
+      "value": "Наталя Гуменюк"
+    }, {
+      "id": "928722c5-b1f8-4cb4-aaf4-f27d1dfa7c23",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='«Найстрашніші дні мого життя». Репортажі The Reckoning Project']",
+      "targets": [
+        ["css=#bx_3966226736_580781 .product__media", "css:finder"],
+        ["xpath=//img[@alt='«Найстрашніші дні мого життя». Репортажі The Reckoning Project']", "xpath:img"],
+        ["xpath=//div[@id='bx_3966226736_580781']/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad927815-4da4-49fd-96b2-1edcc113ab15",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1454.54541015625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5e70b4f-e7d6-4a62-9e76-cb21b8b19951",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#bx_117848907_580781 > div.card > div > div > div.col-xs-12.col-md-6.col-wide.col--inline-block > div > div.card__content.card__content--primary > div.card__params.js-params > div > div:nth-child(3) > a:nth-child(2)",
+      "targets": [],
+      "value": "Наталя Гуменюк"
+    }, {
+      "id": "da1be358-c2b7-4f43-847e-3d3c14fc3b4a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#bx_117848907_580781 > div.card > div > div > div.col-xs-12.col-md-6.col-wide.col--inline-block > div > div.card__content.card__content--primary > div.card__params.js-params > div > div:nth-child(3) > a:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c79cf1bd-c674-47cf-8c0c-2c5298bf5a05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Наталя Гуменюк",
+      "targets": [
+        ["linkText=Наталя Гуменюк", "linkText"],
+        ["css=.col-sm-6 > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Наталя Гуменюк')]", "xpath:link"],
+        ["xpath=//section[@id='bx_117848907_580781']/div/div/div/div[3]/div/div/div[4]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/authors/natalya-gumenyuk/')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Наталя Гуменюк')]", "xpath:innerText"]
+      ],
+      "value": "${Author}"
+    }, {
+      "id": "d698c83b-9cdd-4058-b513-938964e7e15a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa0e9b08-bb5d-40e4-932d-bc52d7e64524",
+    "name": "AddBookToFavoritesTest",
+    "commands": [{
+      "id": "e33dc2f8-dfe7-4f19-9623-d3d2e32d357b",
+      "comment": "",
+      "command": "open",
+      "target": "https://book-ye.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3d6efaf-63d7-45f0-b3f4-4ee1cc27f1c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "696x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc9ecc02-dda6-47d9-94ba-a4366efbac4c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/header/div[2]/div/div/div[2]/a/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2f32ee8-33bf-46e5-ac51-e6ded917def0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/header/div[2]/div/div/div[2]/a/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0381de90-c90c-4961-a7d0-1c80688abfc6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,732.7272338867188)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f38efcac-39f6-4780-a207-9de16a6c3b86",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='«Найстрашніші дні мого життя». Репортажі The Reckoning Project']",
+      "targets": [
+        ["css=#bx_3966226736_580781 .product__media", "css:finder"],
+        ["xpath=//img[@alt='«Найстрашніші дні мого життя». Репортажі The Reckoning Project']", "xpath:img"],
+        ["xpath=//div[@id='bx_3966226736_580781']/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "043f6fc0-4620-483f-a95d-7659f4100b25",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Додати до списку побажань",
+      "targets": [
+        ["linkText=Додати до списку побажань", "linkText"],
+        ["css=.desire__text", "css:finder"],
+        ["xpath=//a[contains(text(),'Додати до списку побажань')]", "xpath:link"],
+        ["xpath=//section[@id='bx_117848907_580781']/div/div/div/div[2]/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Додати до списку побажань')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b2d4182-8d94-48c9-9040-6d20d670a51f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,156.36363220214844)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42fe86a5-f6d0-4bc4-b7db-9335f8f09b6e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,957.272705078125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66c268fb-4c43-4070-a890-109e023373cd",
+      "comment": "",
+      "command": "store",
+      "target": "${WishList)",
+      "targets": [],
+      "value": "В списку побажань"
+    }, {
+      "id": "ec28f5dc-9833-4cea-896e-3e75ccbb4ec4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Додати до списку побажань",
+      "targets": [
+        ["linkText=Додати до списку побажань", "linkText"],
+        ["css=.desire__text", "css:finder"],
+        ["xpath=//a[contains(text(),'Додати до списку побажань')]", "xpath:link"],
+        ["xpath=//section[@id='bx_117848907_580781']/div/div/div/div[2]/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:fav(580781)')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Додати до списку побажань')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b4f32e-035a-400c-b240-610ec311438d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-heart_outline",
+      "targets": [
+        ["css=.icon-heart_outline", "css:finder"],
+        ["xpath=//a[2]/span/span", "xpath:position"]
+      ],
+      "value": "${WishList)"
+    }, {
+      "id": "6dfd6b9f-4954-4fbd-9e7c-2e9f4c5c59c4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8b985526-fceb-4272-8649-e37341651515",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ffb78389-728f-46c9-b0ff-1e1f72cf7e72"]
+  }],
+  "urls": ["https://book-ye.com.ua/"],
+  "plugins": []
+}
